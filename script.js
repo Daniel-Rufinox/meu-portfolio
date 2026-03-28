@@ -18,14 +18,3 @@ projetos.forEach(projeto => {
 
   lista.appendChild(div);
 });
-
-function animar() {
-  document.querySelectorAll('.fade').forEach(el => {
-    if (el.getBoundingClientRect().top < window.innerHeight - 50) {
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('scroll', animar);
-window.addEventListener('load', animar);
